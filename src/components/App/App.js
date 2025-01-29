@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Routes, Route} from "react-router";
 
+import Header from '../Header/Header'
 import Home from '../Home/Home'
 import Categories from '../Category/Categories';
 import Category from '../Category/Category';
@@ -15,7 +16,7 @@ class App extends Component {
     render() {
         return (
             <>
-                <header>Header</header>
+                <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="category" element={<Categories />} />
