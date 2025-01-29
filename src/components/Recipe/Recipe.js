@@ -21,6 +21,11 @@ const Recipe = () => {
             recipe/
             {
                 recipe ?
+                    <b>{recipe.title}</b>
+                    : <b>loading...</b>
+            }
+            {
+                recipe ?
                     <>
                         <h4>Название: {recipe.title}</h4>
                         <p><b>Рецепт:</b><br/>{recipe.description}</p>
