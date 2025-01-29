@@ -29,7 +29,7 @@ const Category = () => {
             {
                 category ?
                     <b>{category.name}</b>
-                    : <h1>loading...</h1>
+                    : <b>loading...</b>
             }
             {
                 recipes ?
@@ -37,7 +37,6 @@ const Category = () => {
 
                     : <h1>loading...</h1>
             }
-            {/*<span>{data.name}</span>*/}
         </>
     )
 }
